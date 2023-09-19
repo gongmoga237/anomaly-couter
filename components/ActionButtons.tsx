@@ -10,7 +10,7 @@ export default function ActionButtons() {
 
 
   return (
-    <div className="flex gap-8">
+    <div className="flex gap-8 flex-wrap">
       <button className="btn btn-accent"
         disabled={!anomalies.length}
         onClick={() => undoClick()}
