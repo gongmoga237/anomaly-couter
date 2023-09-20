@@ -17,7 +17,7 @@ export default function Statistiques() {
 
   return (
     <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-9 gap-6">
-      {anomaliesSet.map((anomaly) => {
+      {anomaliesSet.sort().map((anomaly) => {
         return (
           <li key={anomaly.code}>Total <em className="font-bold text-primary"> {anomaly.code} </em>= <em className="font-bold">{getNumberOfClick(anomaly.code)}</em></li>
         )
