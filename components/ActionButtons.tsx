@@ -8,7 +8,6 @@ export default function ActionButtons() {
   const { resetClicks, undoClick, undoHistory, redoClick } = useAnomaly();
   const { anomalies } = useContext<AnomalyContextProps>(anomalyContext);
 
-
   return (
     <div className="flex gap-8 flex-wrap">
       <button className="btn btn-accent"
