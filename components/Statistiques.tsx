@@ -26,9 +26,9 @@ export default function Statistiques() {
             <li key={anomaly.code}>Total <em className="font-bold text-primary"> {anomaly.code} </em>= <em className="font-bold">{getNumberOfClick(anomaly.code)}</em></li>
           )
         })}
-<li>
-Total des anomalies : <em className="font-bold">{anomalies.lenth}</em>
-</li>
+      <li>
+      Total des anomalies : <em className="font-bold">{anomalies.length}</em>
+      </li>
     </ul>
   )
 }
